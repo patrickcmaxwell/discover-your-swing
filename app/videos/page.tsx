@@ -9,6 +9,7 @@ export default function VideosPage() {
         title="Coaching videos from Discover Your Swing."
         copy="A curated library of swing, performance, and player-development videos for golfers who want to keep learning between lessons."
         image="/images/on-course.jpg"
+        imagePosition="center top"
       />
       <section className="section-pad bg-white">
         <div className="container grid gap-5 md:grid-cols-2">

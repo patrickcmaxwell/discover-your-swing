@@ -16,9 +16,20 @@ export function Footer() {
           <h2 className="text-sm font-black uppercase text-orange">Navigation</h2>
           <div className="mt-4 grid gap-2">
             {navItems.map((item) => (
-              <Link className="text-white/76 hover:text-white" key={item.href} href={item.href}>
-                {item.label}
-              </Link>
+              <div key={item.href}>
+                <Link className="text-white/76 hover:text-white" href={item.href}>
+                  {item.label}
+                </Link>
+                {item.children ? (
+                  <div className="mt-2 grid gap-1 pl-3">
+                    {item.children.map((child) => (
+                      <Link className="text-sm text-white/54 hover:text-white" key={child.href} href={child.href}>
+                        {child.label}
+                      </Link>
+                    ))}
+                  </div>
+                ) : null}
+              </div>
             ))}
           </div>
         </div>

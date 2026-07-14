@@ -61,7 +61,7 @@ export function ProgramGrid({
                 <h3 className="headline text-2xl">{program.title}</h3>
                 <span className="rounded-full bg-orange px-3 py-1 text-sm font-black text-white">{program.price}</span>
               </div>
-              <p className="mt-2 font-bold text-green">{program.meta}</p>
+              <p className="mt-2 font-bold text-steel">{program.meta}</p>
               <ul className="mt-5 grid gap-2 text-sm leading-6 text-graphite/76">
                 {program.details.map((detail) => (
                   <li className="flex gap-2" key={detail}>
@@ -92,7 +92,7 @@ export function Testimonials() {
             <article className="orbit-card p-6" key={item.name}>
               <div className="text-xl text-orange">★★★★★</div>
               <p className="mt-5 text-base leading-7 text-graphite/78">{item.quote}</p>
-              <p className="mt-6 font-black text-green">{item.name}</p>
+              <p className="mt-6 font-black text-steel">{item.name}</p>
             </article>
           ))}
         </div>

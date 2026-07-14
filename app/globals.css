@@ -7,7 +7,7 @@
   --color-cloud: #f5f7ef;
   --color-orange: #f28c22;
   --color-orange-deep: #d66d13;
-  --color-green: #009b5c;
+  --color-steel: #293241;
   --color-blue: #178ed2;
   --color-red: #e51442;
   --color-line: rgba(21, 21, 21, 0.12);
@@ -74,7 +74,7 @@ textarea {
 }
 
 .eyebrow {
-  color: var(--color-green);
+  color: var(--color-steel);
   font-family: var(--font-display);
   font-size: 0.78rem;
   font-weight: 800;

@@ -29,7 +29,8 @@ export default function Home() {
     <>
       <section className="relative min-h-[92vh] overflow-hidden px-4 pb-16 pt-28 md:pt-32">
         <Image src="/images/hero-christie.jpg" alt="" fill priority sizes="100vw" className="object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/78 to-white/12" />
+        <div className="absolute inset-0 bg-gradient-to-r from-white/76 via-white/38 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-white/42 via-transparent to-transparent" />
         <div className="absolute bottom-5 left-5 hidden h-40 w-40 md:block">
           <span className="atom-ring left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" />
           <span className="atom-ring left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" />
@@ -37,14 +38,6 @@ export default function Home() {
         </div>
         <div className="container relative flex min-h-[calc(92vh-8rem)] items-center">
           <div className="max-w-3xl rise" style={{ maxWidth: "min(calc(100vw - 2rem), 44rem)" }}>
-            <div className="hero-mobile-logo">
-              <Image src="/images/logo-mark.png" alt="" width={62} height={73} className="h-16 w-auto shrink-0" />
-              <div>
-                <p className="text-2xl font-black leading-none text-orange">Discover Your Swing!</p>
-                <p className="mt-1 text-sm font-black text-ink">Professional Golf Instruction</p>
-              </div>
-            </div>
-            <Image src="/images/logo-wide.jpg" alt="Discover Your Swing!" width={470} height={139} className="hero-wide-logo mb-8 h-auto max-w-md rounded bg-white/92 shadow-xl" />
             <p className="eyebrow">Palm Springs Golf Lessons</p>
             <h1 className="display mt-5 text-5xl md:text-7xl">Welcome to Discover Your Swing!</h1>
             <p className="lead mt-6 max-w-2xl">

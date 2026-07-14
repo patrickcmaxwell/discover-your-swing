@@ -5,9 +5,15 @@ export const phone = "508-330-6731";
 export const navItems = [
   { href: "/", label: "Home" },
   { href: "/about", label: "Discover Us" },
-  { href: "/adult-coaching", label: "Adult Coaching" },
-  { href: "/junior-golf", label: "Junior Golf" },
-  { href: "/performance-coaching", label: "Performance" },
+  {
+    href: "/performance-coaching",
+    label: "Performance Coaching",
+    children: [
+      { href: "/junior-golf", label: "Junior Golf" },
+      { href: "/adult-coaching", label: "Adult Coaching" },
+      { href: "/performance-coaching", label: "Player Performance Coaching" },
+    ],
+  },
   { href: "/videos", label: "DYS Videos" },
   { href: "/gift-cards", label: "Gift Cards" },
 ];
@@ -42,7 +48,7 @@ export const programs = {
       title: "Senior Playing Lesson",
       price: "$150",
       meta: "120 minutes",
-      details: ["6 holes coaching", "Coaching with Christie Quinn", "Covers greens fees for remaining 12 holes"],
+      details: ["6 holes coaching", "Coaching with Christie Quinn", "Covers course fees for remaining 12 holes"],
     },
     {
       title: "Duffer Series",
@@ -92,7 +98,7 @@ export const programs = {
       title: "Performance Playing Lesson",
       price: "$125-$150",
       meta: "San Diego or Palm Springs",
-      details: ["6 holes coaching", "Coaching with Christie Quinn", "Covers greens fees for remaining 12 holes"],
+      details: ["6 holes coaching", "Coaching with Christie Quinn", "Covers course fees for remaining 12 holes"],
     },
   ],
   performance: [

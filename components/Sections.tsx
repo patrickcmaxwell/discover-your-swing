@@ -7,11 +7,13 @@ export function PageHero({
   title,
   copy,
   image,
+  imagePosition = "center center",
 }: {
   eyebrow: string;
   title: string;
   copy: string;
   image: string;
+  imagePosition?: string;
 }) {
   return (
     <section className="px-4 pb-16 pt-32 md:pb-20 md:pt-36">
@@ -30,7 +32,15 @@ export function PageHero({
           </div>
         </div>
         <div className="image-shell min-h-[440px] rise rise-delay">
-          <Image src={image} alt="" fill sizes="(max-width: 1024px) 100vw, 46vw" className="object-cover" priority />
+          <Image
+            src={image}
+            alt=""
+            fill
+            sizes="(max-width: 1024px) 100vw, 46vw"
+            className="object-cover"
+            style={{ objectPosition: imagePosition }}
+            priority
+          />
         </div>
       </div>
     </section>
@@ -48,30 +58,35 @@ export function ProgramGrid({
 }) {
   return (
     <section className="section-pad bg-white">
-      <div className="container">
-        <div className="max-w-3xl">
+      <div className="container grid gap-10 lg:grid-cols-[0.38fr_0.62fr]">
+        <div className="lg:sticky lg:top-28 lg:self-start">
           <p className="eyebrow">Programs & Packages</p>
           <h2 className="headline mt-3 text-4xl md:text-5xl">{title}</h2>
           <p className="lead mt-5">{intro}</p>
+          <a className="cta cta-primary mt-8" href={bookingUrl} target="_blank" rel="noreferrer">
+            Book Online
+          </a>
         </div>
-        <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <div className="overflow-hidden rounded-lg border border-line bg-paper shadow-2xl shadow-steel/5">
           {programs.map((program) => (
-            <article className="orbit-card p-6" key={program.title}>
-              <div className="flex items-start justify-between gap-5">
-                <h3 className="headline text-2xl">{program.title}</h3>
-                <span className="rounded-full bg-orange px-3 py-1 text-sm font-black text-white">{program.price}</span>
+            <article className="grid gap-5 border-b border-line p-5 last:border-b-0 md:grid-cols-[1fr_auto] md:p-7" key={program.title}>
+              <div>
+                <div className="flex flex-wrap items-start gap-3">
+                  <h3 className="headline max-w-xl text-2xl md:text-3xl">{program.title}</h3>
+                  <span className="rounded-full bg-orange px-3 py-1 text-sm font-black text-white">{program.price}</span>
+                </div>
+                <p className="mt-2 font-black text-steel">{program.meta}</p>
+                <ul className="mt-5 grid gap-2 text-base leading-7 text-graphite/72">
+                  {program.details.map((detail) => (
+                    <li className="flex gap-3" key={detail}>
+                      <span className="mt-2.5 h-2 w-2 shrink-0 rounded-full bg-steel" />
+                      <span>{detail}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <p className="mt-2 font-bold text-steel">{program.meta}</p>
-              <ul className="mt-5 grid gap-2 text-sm leading-6 text-graphite/76">
-                {program.details.map((detail) => (
-                  <li className="flex gap-2" key={detail}>
-                    <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-blue" />
-                    <span>{detail}</span>
-                  </li>
-                ))}
-              </ul>
-              <a className="cta cta-secondary mt-6 w-full" href={bookingUrl} target="_blank" rel="noreferrer">
-                Get Started
+              <a className="cta cta-secondary self-end md:min-w-40" href={bookingUrl} target="_blank" rel="noreferrer">
+                Reserve
               </a>
             </article>
           ))}
@@ -130,13 +145,20 @@ export function Partners() {
 
 export function CtaBand() {
   return (
-    <section className="bg-ink px-4 py-16 text-white">
-      <div className="container flex flex-col gap-7 md:flex-row md:items-center md:justify-between">
-        <div>
-          <p className="eyebrow text-orange">Ready to get started?</p>
-          <h2 className="headline mt-3 max-w-3xl text-4xl md:text-5xl">Let’s discover your swing together.</h2>
+    <section className="relative overflow-hidden px-4 py-24 text-white md:py-32">
+      <Image src="/images/hero-christie.jpg" alt="" fill sizes="100vw" className="object-cover" style={{ objectPosition: "center center" }} />
+      <div className="absolute inset-0 bg-steel/68" />
+      <div className="absolute inset-0 bg-gradient-to-r from-steel via-steel/88 to-steel/56" />
+      <div className="absolute inset-0 bg-gradient-to-t from-steel/90 via-transparent to-steel/28" />
+      <div className="container relative flex flex-col gap-7 md:flex-row md:items-end md:justify-between">
+        <div className="max-w-3xl">
+          <p className="eyebrow text-white">Ready to get started?</p>
+          <h2 className="headline mt-3 text-5xl md:text-6xl">Let’s discover your swing together.</h2>
+          <p className="mt-5 max-w-2xl text-lg leading-8 text-white/88">
+            Book personalized golf coaching for Palm Springs, Palm Desert, or San Diego.
+          </p>
         </div>
-        <a className="cta cta-primary" href={bookingUrl} target="_blank" rel="noreferrer">
+        <a className="cta cta-primary shrink-0" href={bookingUrl} target="_blank" rel="noreferrer">
           Book Now
         </a>
       </div>

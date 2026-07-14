@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export function Preloader() {
   return (
-    <div className="fixed inset-0 z-[100] grid place-items-center bg-paper" style={{ animation: "preloader-out 1.8s ease 0.45s forwards" }}>
+    <div className="fixed inset-0 z-[300] grid place-items-center bg-paper" style={{ animation: "preloader-out 1.8s ease 0.45s forwards" }}>
       <div className="relative grid place-items-center">
         <div className="absolute h-44 w-44 rounded-full border border-orange/20" />
         <div className="absolute h-32 w-32" style={{ animation: "atom-spin 1.25s linear infinite" }}>

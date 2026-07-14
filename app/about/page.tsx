@@ -9,12 +9,20 @@ export default function AboutPage() {
         eyebrow="About Discover Your Swing"
         title="A trademarked philosophy for finding your own swing."
         copy="Christie Quinn helps every golfer uncover and embrace a swing that fits their body, goals, and relationship with the game."
-        image="/images/coach-action.jpg"
+        image="/images/adult.jpg"
+        imagePosition="center center"
       />
       <section className="section-pad bg-white">
         <div className="container grid gap-10 lg:grid-cols-[0.75fr_1fr]">
           <div className="image-shell min-h-[520px]">
-            <Image src="/images/student.jpg" alt="Discover Your Swing student" fill sizes="(max-width: 1024px) 100vw, 40vw" className="object-cover" />
+            <Image
+              src="/images/student.jpg"
+              alt="Christie Quinn"
+              fill
+              sizes="(max-width: 1024px) 100vw, 40vw"
+              className="object-cover"
+              style={{ objectPosition: "center top" }}
+            />
           </div>
           <div>
             <p className="eyebrow">Our Philosophy</p>

@@ -8,7 +8,8 @@ export default function AdultCoachingPage() {
         eyebrow="Palm Springs, Palm Desert & San Diego"
         title="Adult golf lessons and programs."
         copy="Performance coaching for golfers refining their swing, improving consistency, mastering the mental game, and building confidence on the course."
-        image="/images/adult.jpg"
+        image="/images/junior.jpg"
+        imagePosition="center center"
       />
       <ProgramGrid
         title="Adult private lessons, on-course coaching, and focused packages."

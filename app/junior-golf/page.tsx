@@ -8,7 +8,8 @@ export default function JuniorGolfPage() {
         eyebrow="Junior Golf"
         title="Build confidence, skills, and love for the game."
         copy="Junior programs support young golfers with private lessons, lesson packages, and specialty coaching tailored to skill level and goals."
-        image="/images/junior.jpg"
+        image="/images/adult.jpg"
+        imagePosition="center center"
       />
       <ProgramGrid
         title="Junior golf lessons and development programs."

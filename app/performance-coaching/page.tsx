@@ -9,6 +9,7 @@ export default function PerformanceCoachingPage() {
         title="Perform your best when it matters most."
         copy="Christie Quinn specializes in preparing competitive golfers to thrive in tournament play, from junior leaderboards to amateur championship goals."
         image="/images/performance.jpg"
+        imagePosition="center center"
       />
       <section className="section-pad bg-white">
         <div className="container grid gap-8 md:grid-cols-3">

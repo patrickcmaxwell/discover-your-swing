@@ -23,7 +23,7 @@ export default function GiftCardsPage() {
       <div className="container relative">
         <div className="mx-auto max-w-3xl text-center">
           <p className="eyebrow">Gift Cards</p>
-          <h1 className="display mt-3 text-balance text-4xl md:text-5xl">Give the gift of better golf.</h1>
+          <h1 className="display mt-3 text-balance text-3xl sm:text-4xl md:text-5xl">Give the gift of better golf.</h1>
           <p className="lead mx-auto mt-4 max-w-2xl">
             Purchase a Discover Your Swing!<sup>®</sup> gift card for golf coaching with Christie Quinn.
           </p>

@@ -16,11 +16,11 @@ export function PageHero({
   imagePosition?: string;
 }) {
   return (
-    <section className="px-4 pb-16 pt-32 md:pb-20 md:pt-36">
+    <section className="px-5 pb-16 pt-32 md:pb-20 md:pt-36">
       <div className="container grid items-end gap-8 lg:grid-cols-[1fr_0.86fr]">
         <div className="rise">
           <p className="eyebrow">{eyebrow}</p>
-          <h1 className="display mt-4 text-5xl md:text-7xl">{title}</h1>
+          <h1 className="display mt-4 text-4xl sm:text-5xl md:text-7xl">{title}</h1>
           <p className="lead mt-6 max-w-2xl">{copy}</p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a className="cta cta-primary" href={bookingUrl} target="_blank" rel="noreferrer">

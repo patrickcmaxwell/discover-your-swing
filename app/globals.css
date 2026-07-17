@@ -64,6 +64,7 @@ textarea {
   font-weight: 800;
   line-height: 0.98;
   letter-spacing: 0;
+  overflow-wrap: break-word;
 }
 
 .headline {
@@ -71,6 +72,7 @@ textarea {
   font-weight: 760;
   line-height: 1.05;
   letter-spacing: 0;
+  overflow-wrap: break-word;
 }
 
 .eyebrow {

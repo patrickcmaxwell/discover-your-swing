@@ -114,6 +114,7 @@ export const programs = {
 export const videos = [
   { id: "GTqyo37F7m4", title: "Intro with Christie Quinn" },
   { id: "qFEBVEUh40Y", title: "Bunker Shot Distance Control Made Easy" },
+  { id: "8m0s2YfMFww", title: "Find the Best Golf Grip for You" },
   { id: "h3MKFIg-ZVM", title: "Box Putting Drill" },
   { id: "o2V1qgJWtHE", title: "No 3 Putts" },
   { id: "he-mH5nDKwo", title: "Tempo" },

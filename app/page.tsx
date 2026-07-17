@@ -30,7 +30,7 @@ const paths = [
 export default function Home() {
   return (
     <>
-      <section className="relative min-h-[94vh] overflow-hidden px-4 pb-14 pt-28 md:pt-32">
+      <section className="relative min-h-[94vh] overflow-hidden px-5 pb-14 pt-28 md:pt-32">
         <Image src="/images/hero-christie.jpg" alt="" fill priority sizes="100vw" className="object-cover" />
         <div className="absolute inset-0 bg-white/64" />
         <div className="absolute inset-0 bg-gradient-to-b from-white/82 via-white/40 to-white/86" />
@@ -40,9 +40,9 @@ export default function Home() {
           <span className="atom-ring left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" />
         </div>
         <div className="container relative flex min-h-[calc(94vh-8rem)] items-center justify-center">
-          <div className="mx-auto rise text-center" style={{ maxWidth: "min(calc(100vw - 2rem), 46rem)" }}>
+          <div className="mx-auto w-full max-w-[46rem] rise text-center">
             <p className="eyebrow">Palm Springs Golf Lessons</p>
-            <h1 className="display mt-5 text-5xl md:text-7xl" style={{ fontWeight: 900 }}>
+            <h1 className="display mt-5 text-4xl sm:text-5xl md:text-7xl" style={{ fontWeight: 900 }}>
               Welcome to Discover Your Swing!<sup className="text-[0.42em] align-super">®</sup>
             </h1>
             <p className="lead mx-auto mt-6 max-w-2xl font-bold text-graphite">

@@ -20,7 +20,7 @@ export function Nav() {
       <header className="fixed inset-x-0 top-0 z-[200] border-b border-line bg-paper/86 backdrop-blur-xl">
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 md:px-6">
           <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-            <Image src="/images/logo-mark.png" alt="Discover Your Swing" width={48} height={57} className="h-12 w-auto" priority />
+            <Image src="/images/logo-mark.png" alt="Discover Your Swing" width={64} height={76} className="h-16 w-auto" priority />
           </Link>
           <nav className="hidden items-center gap-6 lg:flex">
             {navItems.slice(1).map((item) => (

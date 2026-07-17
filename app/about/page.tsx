@@ -32,11 +32,11 @@ export default function AboutPage() {
                 The essence of golf lies in hearing a friend say “Nice shot” and embracing the journey of improvement. The pursuit of a better game is a lifelong challenge, but the secret to enjoying golf is learning to accept and work with the body you have today.
               </p>
               <p>
-                Discover Your Swing! is Christie’s trademarked philosophy and unique approach to teaching the game. No two people share the same strength or flexibility, and no two swings are alike. By understanding that, golfers can find fulfillment in their current abilities while working toward their potential.
+                Discover Your Swing!<sup>®</sup> is Christie’s registered trademark and unique approach to teaching the game. No two people share the same strength or flexibility, and no two swings are alike. By understanding that, golfers can find fulfillment in their current abilities while working toward their potential.
               </p>
             </div>
             <div className="mt-8 rounded-lg border border-line bg-cloud p-6">
-              <h3 className="headline text-2xl">Christie Quinn, LPGA</h3>
+              <h3 className="headline text-2xl">Christie Quinn, LPGA Class A</h3>
               <p className="copy mt-3">
                 Christie Quinn is a Class A Member of the LPGA Teaching & Club Professional Division and current LPGA Vice President. Her holistic philosophy integrates swing mechanics, physical fitness, and mental preparation, empowering golfers to reach their potential.
               </p>

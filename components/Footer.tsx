@@ -44,7 +44,7 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <div className="container mt-12 border-t border-line pt-6 text-sm text-graphite/54">© 2026 Discover Your Swing! All Rights Reserved.</div>
+      <div className="container mt-12 border-t border-line pt-6 text-sm text-graphite/54">© 2026 Discover Your Swing!<sup>®</sup> — a registered trademark since 2006. All Rights Reserved.</div>
     </footer>
   );
 }

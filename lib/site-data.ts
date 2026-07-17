@@ -1,4 +1,4 @@
-export const bookingUrl = "https://coach.thrivesports.us/coaches/christie-quinn/";
+export const bookingUrl = "https://app.coachnow.io/facility/5b397090a11de411b44f8e3bd3/coach/christie-quinn/e6d1fb405a3a0138dcd052b26c3d04b2";
 export const email = "quinn@discoveryourswing.com";
 export const phone = "508-330-6731";
 
@@ -83,12 +83,6 @@ export const programs = {
       details: ["Private / Semi-Private 30min - $50", "Private / Semi-Private 60min - $100"],
     },
     {
-      title: "Woodie Jr Series",
-      price: "$150",
-      meta: "5 session package",
-      details: ["5x 1/2 hour junior private / semi-private lessons", "Ages 5-15"],
-    },
-    {
       title: "Junior Custom Group Lesson",
       price: "$200",
       meta: "1 hour",
@@ -117,4 +111,11 @@ export const programs = {
   ],
 };
 
-export const videoIds = ["GTqyo37F7m4", "h3MKFIg-ZVM", "kufP1DM_YO4", "o2V1qgJWtHE", "he-mH5nDKwo", "Q71I2SJtixs"];
+export const videos = [
+  { id: "GTqyo37F7m4", title: "Intro with Christie Quinn" },
+  { id: "qFEBVEUh40Y", title: "Bunker Shot Distance Control Made Easy" },
+  { id: "h3MKFIg-ZVM", title: "Box Putting Drill" },
+  { id: "o2V1qgJWtHE", title: "No 3 Putts" },
+  { id: "he-mH5nDKwo", title: "Tempo" },
+  { id: "Q71I2SJtixs", title: "May the Force Be With You" },
+];

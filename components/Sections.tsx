@@ -57,8 +57,8 @@ export function ProgramGrid({
   programs: Array<{ title: string; price: string; meta: string; details: string[] }>;
 }) {
   return (
-    <section className="section-pad bg-white">
-      <div className="container grid gap-10 lg:grid-cols-[0.38fr_0.62fr]">
+    <section className="section-pad bg-cloud">
+      <div className="container grid gap-10 lg:grid-cols-[0.36fr_0.64fr]">
         <div className="lg:sticky lg:top-28 lg:self-start">
           <p className="eyebrow">Programs & Packages</p>
           <h2 className="headline mt-3 text-4xl md:text-5xl">{title}</h2>
@@ -67,26 +67,29 @@ export function ProgramGrid({
             Book Online
           </a>
         </div>
-        <div className="overflow-hidden rounded-lg border border-line bg-paper shadow-2xl shadow-steel/5">
+        <div className="grid gap-4 sm:grid-cols-2">
           {programs.map((program) => (
-            <article className="grid gap-5 border-b border-line p-5 last:border-b-0 md:grid-cols-[1fr_auto] md:p-7" key={program.title}>
-              <div>
-                <div className="flex flex-wrap items-start gap-3">
-                  <h3 className="headline max-w-xl text-2xl md:text-3xl">{program.title}</h3>
-                  <span className="rounded-full bg-orange px-3 py-1 text-sm font-black text-white">{program.price}</span>
-                </div>
-                <p className="mt-2 font-black text-steel">{program.meta}</p>
-                <ul className="mt-5 grid gap-2 text-base leading-7 text-graphite/72">
-                  {program.details.map((detail) => (
-                    <li className="flex gap-3" key={detail}>
-                      <span className="mt-2.5 h-2 w-2 shrink-0 rounded-full bg-steel" />
-                      <span>{detail}</span>
-                    </li>
-                  ))}
-                </ul>
+            <article
+              className="flex flex-col rounded-xl border border-line bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-steel/10"
+              key={program.title}
+            >
+              <div className="flex items-start justify-between gap-3">
+                <h3 className="headline text-xl leading-tight">{program.title}</h3>
+                <p className="display shrink-0 text-2xl text-orange">{program.price}</p>
               </div>
-              <a className="cta cta-secondary self-end md:min-w-40" href={bookingUrl} target="_blank" rel="noreferrer">
-                Reserve
+              <p className="mt-1.5 text-xs font-black uppercase tracking-wider text-steel">{program.meta}</p>
+              <ul className="mt-4 grid flex-1 gap-2.5 border-t border-line pt-4 text-sm leading-6 text-graphite/72">
+                {program.details.map((detail) => (
+                  <li className="flex gap-2.5" key={detail}>
+                    <svg viewBox="0 0 20 20" className="mt-0.5 h-4 w-4 shrink-0 text-orange" aria-hidden="true">
+                      <path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.2" />
+                    </svg>
+                    <span>{detail}</span>
+                  </li>
+                ))}
+              </ul>
+              <a className="cta cta-primary mt-6 w-full" href={bookingUrl} target="_blank" rel="noreferrer">
+                Book Now
               </a>
             </article>
           ))}

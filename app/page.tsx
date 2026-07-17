@@ -114,7 +114,7 @@ export default function Home() {
         <div className="container">
           <div className="max-w-2xl">
             <p className="eyebrow">A Roadmap for Golfers at Every Level</p>
-            <h2 className="headline mt-3 text-4xl md:text-5xl">Stop chasing swing tips. Discover the swing your body was built to make.</h2>
+            <h2 className="headline mt-3 text-4xl md:text-5xl">Stop Chasing Swing Tips. Discover the Swing Your Body Was Built to Make.</h2>
           </div>
           <div className="mt-10 grid gap-5 md:grid-cols-3">
             {paths.map((item) => (
@@ -152,7 +152,7 @@ export default function Home() {
           <div className="grid gap-4 md:grid-cols-3">
             {[
               ["01", "Assess", "Start with the golfer’s body, goals, ball flight, and relationship with the game."],
-              ["02", "Build", "Create a repeatable motion and practice plan that fits the player in front of Christie."],
+              ["02", "Build", "Create a realistic plan built around your goals, your body, and the time you have to play."],
               ["03", "Transfer", "Move the work from lesson tee to range, course, tournament, and long-term confidence."],
             ].map(([number, title, copy]) => (
               <article className="orbit-card p-6" key={title}>

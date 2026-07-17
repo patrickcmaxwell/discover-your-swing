@@ -18,9 +18,13 @@ export function Nav() {
   return (
     <>
       <header className="fixed inset-x-0 top-0 z-[200] border-b border-line bg-paper/86 backdrop-blur-xl">
-        <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 md:px-6">
-          <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-            <Image src="/images/logo-mark.png" alt="Discover Your Swing" width={64} height={76} className="h-16 w-auto" priority />
+        <div className="relative mx-auto flex h-24 max-w-7xl items-center justify-between px-4 md:px-6">
+          <Link
+            href="/"
+            className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center gap-3 md:static md:translate-x-0 md:translate-y-0"
+            onClick={() => setOpen(false)}
+          >
+            <Image src="/images/logo-mark.png" alt="Discover Your Swing" width={88} height={104} className="h-20 w-auto" priority />
           </Link>
           <nav className="hidden items-center gap-6 lg:flex">
             {navItems.slice(1).map((item) => (
@@ -68,7 +72,7 @@ export function Nav() {
           <button
             aria-label={open ? "Close navigation" : "Open navigation"}
             aria-expanded={open}
-            className="relative z-[250] ml-auto grid h-12 w-12 place-items-center rounded-full bg-orange shadow-[0_16px_34px_rgba(242,140,34,0.28)] lg:hidden"
+            className="absolute right-4 top-1/2 z-[250] grid h-12 w-12 -translate-y-1/2 place-items-center rounded-full bg-orange shadow-[0_16px_34px_rgba(242,140,34,0.28)] md:static md:ml-auto md:translate-y-0 lg:hidden"
             onClick={() => setOpen((value) => !value)}
           >
             <span className="relative h-4 w-6">

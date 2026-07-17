@@ -21,11 +21,11 @@ const nunito = Nunito_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://discoveryourswing.com"),
-  title: "Discover Your Swing! - Golf Lessons in Palm Springs, Palm Desert & San Diego",
+  title: "Discover Your Swing!® - Golf Lessons in Palm Springs, Palm Desert & San Diego",
   description:
     "Personalized golf instruction and player development from Christie Quinn, LPGA Class A Professional and LPGA Vice President.",
   openGraph: {
-    title: "Discover Your Swing!",
+    title: "Discover Your Swing!®",
     description: "Professional golf lessons and performance coaching with Christie Quinn.",
     type: "website",
     images: ["/images/hero-christie.jpg"],

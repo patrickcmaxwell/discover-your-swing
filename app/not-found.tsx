@@ -6,7 +6,7 @@ export default function NotFound() {
       <div className="max-w-xl text-center">
         <p className="eyebrow">404</p>
         <h1 className="display mt-4 text-5xl">This page is out of bounds.</h1>
-        <p className="lead mt-5">Head back to Discover Your Swing and keep moving toward better golf.</p>
+        <p className="lead mt-5">Head back to Discover Your Swing® and keep moving toward better golf.</p>
         <Link href="/" className="cta cta-primary mt-8">
           Back Home
         </Link>

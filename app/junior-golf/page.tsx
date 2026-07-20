@@ -14,7 +14,7 @@ export default function JuniorGolfPage() {
       <ProgramGrid
         title="Junior golf lessons and development programs."
         intro="From fundamental techniques to advanced strategies, Christie creates a fun and supportive environment where young players can thrive on and off the course."
-        programs={programs.junior}
+        programs={programs}
       />
       <Testimonials />
       <CtaBand />

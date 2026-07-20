@@ -36,80 +36,68 @@ export const testimonials = [
   },
 ];
 
-export const programs = {
-  adult: [
-    {
-      title: "Adult On Course Instruction",
-      price: "$200",
-      meta: "120 minutes",
-      details: ["Private / Semi-Private 30min - $100", "Private / Semi-Private 60min - $175"],
-    },
-    {
-      title: "Senior Playing Lesson",
-      price: "$150",
-      meta: "120 minutes",
-      details: ["6 holes coaching", "Coaching with Christie Quinn", "Covers course fees for remaining 12 holes"],
-    },
-    {
-      title: "Duffer Series",
-      price: "$400",
-      meta: "5 session package",
-      details: ["5x 1/2 hour adult private / semi-private lessons"],
-    },
-    {
-      title: "Adult 5-Pack",
-      price: "$600",
-      meta: "5 session package",
-      details: ["5x one hour adult private / semi-private lessons"],
-    },
-    {
-      title: "Custom Group Lesson",
-      price: "$300",
-      meta: "1 hour",
-      details: ["Up to 3 golfers"],
-    },
-  ],
-  junior: [
-    {
-      title: "San Diego Junior On Course Instruction",
-      price: "$125",
-      meta: "120 minutes",
-      details: ["Private / Semi-Private 30min - $50", "Private / Semi-Private 60min - $100"],
-    },
-    {
-      title: "Palm Springs Junior On Course Instruction",
-      price: "$150",
-      meta: "120 minutes",
-      details: ["Private / Semi-Private 30min - $50", "Private / Semi-Private 60min - $100"],
-    },
-    {
-      title: "Junior Custom Group Lesson",
-      price: "$200",
-      meta: "1 hour",
-      details: ["Up to 3 golfers"],
-    },
-    {
-      title: "Performance Playing Lesson",
-      price: "$125-$150",
-      meta: "San Diego or Palm Springs",
-      details: ["6 holes coaching", "Coaching with Christie Quinn", "Covers course fees for remaining 12 holes"],
-    },
-  ],
-  performance: [
-    {
-      title: "Performance Playing Lesson",
-      price: "$200",
-      meta: "On-course performance instruction",
-      details: ["Tournament preparation", "Decision-making under pressure", "Scoring strategy"],
-    },
-    {
-      title: "Custom Programs",
-      price: "Custom",
-      meta: "Built around schedule and goals",
-      details: ["Competitive player plan", "Performance analytics", "Tournament readiness"],
-    },
-  ],
+export type Program = {
+  title: string;
+  price: string;
+  priceNote?: string;
+  meta: string;
+  description?: string;
+  details?: string[];
 };
+
+export const programs: Program[] = [
+  {
+    title: "Discover Your Swing!® Assessment",
+    price: "$295",
+    meta: "90 minutes",
+    details: [
+      "Comprehensive movement screening",
+      "Swing analysis with video",
+      "Personalized Discover Your Swing!® profile",
+      "Customized improvement plan",
+      "Practice drills and lesson recap",
+    ],
+  },
+  {
+    title: "60-Minute Coaching Session",
+    price: "$175",
+    meta: "60 minutes",
+    description:
+      "Continue building your Discover Your Swing!® blueprint with personalized coaching tailored to your body, swing, and goals. Each session includes video analysis, customized drills, and a clear practice plan designed to create lasting improvement.",
+  },
+  {
+    title: "5-Lesson Performance Package",
+    price: "$995",
+    priceNote: "Save $55 — regularly $1,050",
+    meta: "5 sessions",
+    description:
+      "Designed for golfers committed to lowering scores and building consistency. You’ll receive five 60-minute coaching sessions, personalized practice plans, video feedback, and ongoing accountability to accelerate your progress.",
+    details: [
+      "Five 60-minute coaching sessions",
+      "Personalized practice plans",
+      "Video swing analysis",
+      "Priority scheduling",
+      "Email/text support between lessons",
+    ],
+  },
+  {
+    title: "10-Lesson Transformation Package",
+    price: "$1,895",
+    priceNote: "Save $205 — regularly $2,100",
+    meta: "10 sessions",
+    description:
+      "Your complete game transformation. This comprehensive coaching experience is designed for golfers who want lasting improvement through a customized long-term development plan. Together we’ll build a swing that fits your body, improve scoring skills, and create confidence that transfers to the course.",
+    details: [
+      "Ten 60-minute coaching sessions",
+      "Comprehensive swing development plan",
+      "Video analysis and progress tracking",
+      "Personalized practice programs",
+      "Priority scheduling",
+      "Email/text coaching support between lessons",
+      "One complimentary progress review",
+    ],
+  },
+];
 
 export const videos = [
   { id: "GTqyo37F7m4", title: "Intro with Christie Quinn" },

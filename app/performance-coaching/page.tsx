@@ -28,7 +28,7 @@ export default function PerformanceCoachingPage() {
       <ProgramGrid
         title="Ready to compete with confidence?"
         intro="Choose a performance playing lesson or work with Christie to design a custom program around your competitive schedule and goals."
-        programs={programs.performance}
+        programs={programs}
       />
       <Partners />
       <Testimonials />

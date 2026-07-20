@@ -54,7 +54,7 @@ export function ProgramGrid({
 }: {
   title: string;
   intro: string;
-  programs: Array<{ title: string; price: string; meta: string; details: string[] }>;
+  programs: Array<{ title: string; price: string; priceNote?: string; meta: string; description?: string; details?: string[] }>;
 }) {
   return (
     <section className="section-pad bg-cloud">
@@ -75,19 +75,29 @@ export function ProgramGrid({
             >
               <div className="flex items-start justify-between gap-3">
                 <h3 className="headline text-xl leading-tight">{program.title}</h3>
-                <p className="display shrink-0 text-2xl text-orange">{program.price}</p>
+                <div className="shrink-0 text-right">
+                  <p className="display text-2xl text-orange">{program.price}</p>
+                  {program.priceNote ? <p className="mt-0.5 text-[0.7rem] font-bold leading-tight text-graphite/55">{program.priceNote}</p> : null}
+                </div>
               </div>
               <p className="mt-1.5 text-xs font-black uppercase tracking-wider text-steel">{program.meta}</p>
-              <ul className="mt-4 grid flex-1 gap-2.5 border-t border-line pt-4 text-sm leading-6 text-graphite/72">
-                {program.details.map((detail) => (
-                  <li className="flex gap-2.5" key={detail}>
-                    <svg viewBox="0 0 20 20" className="mt-0.5 h-4 w-4 shrink-0 text-orange" aria-hidden="true">
-                      <path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.2" />
-                    </svg>
-                    <span>{detail}</span>
-                  </li>
-                ))}
-              </ul>
+              {program.description ? <p className="mt-3 text-sm leading-6 text-graphite/72">{program.description}</p> : null}
+              {program.details?.length ? (
+                <>
+                  <p className="mt-4 border-t border-line pt-4 text-xs font-black uppercase tracking-wider text-steel">Includes</p>
+                  <ul className="mt-3 grid gap-2.5 text-sm leading-6 text-graphite/72">
+                    {program.details.map((detail) => (
+                      <li className="flex gap-2.5" key={detail}>
+                        <svg viewBox="0 0 20 20" className="mt-0.5 h-4 w-4 shrink-0 text-orange" aria-hidden="true">
+                          <path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.2" />
+                        </svg>
+                        <span>{detail}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              ) : null}
+              <div className="flex-1" />
               <a className="cta cta-primary mt-6 w-full" href={bookingUrl} target="_blank" rel="noreferrer">
                 Book Now
               </a>
